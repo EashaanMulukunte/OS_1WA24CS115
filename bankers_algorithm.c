@@ -23,7 +23,6 @@ int main() {
     for(i=0;i<r;i++)
         scanf("%d", &avail[i]);
 
-    // Calculate Need matrix
     for(i=0;i<p;i++)
         for(j=0;j<r;j++)
             need[i][j] = max[i][j] - alloc[i][j];
